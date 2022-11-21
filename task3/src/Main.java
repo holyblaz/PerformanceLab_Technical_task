@@ -24,7 +24,6 @@ public class Main {
         for (Object valueJo : jo) {
             final long id = (Long) ((JsonObject) valueJo).get("id");
             final String value = (String) ((JsonObject) valueJo).get("value");
-            System.out.println(id + " " + value);
             idToResult.put(id, value);
         }
         // рекурсивно заполняем результаты тестирования в поля value объекта tests
